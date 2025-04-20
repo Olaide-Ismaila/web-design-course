@@ -1,58 +1,90 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Website Design</title>
-        <link rel="stylesheet" href="index.css">
-        <script type="text/javascript" src="https://kit.fontawesome.com/4f0c366ee9.js"></script>
-    </head>
-    <body>
-        <header class="header-el">
-            <div class="icon-web">PraRoz&reg;</div>
-            <div>
-                <ul class="header-ul-el">
-                    <li class="header-li-el"><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">DESIGN</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="header-input-el">
-                <input type="search" class="input-el" name="search" placeholder="Type to search">
-                <a href="#"><button class="header-btn">Search</button></a>
-            </div>
-        </header>
-        <main class="main-el">
-            <section class="section-el">
-            <h1 class="main-h1-el">Web Design & 
-                <span class="h1-el">Development</span> 
-                Course</h1>
-            <p class="section-p-el">Web Design is a specialisation. they also use HTML,<br> 
-                CSS, WYSIWYG editing software, mark up validation etc 
-                to create design elements.
-            </p>
-            <a href=""></a><button class="section-btn">JOIN US</button></a>
-        </section>
-        <aside class="aside-el">
-            <p class="aside-p-el center">Login Here</p>
-            <div class="aside-nav-el">
-                <input type="email" class="aside-input-el" name="email" placeholder="Enter email HERE">
-                <input type="password" class="aside-input-el" name="password" placeholder="Enter password HERE">
-                <a href="#"><button class="aside-btn">Login</button></a>
-                <p class="center">Dont have an account?<br>
-                <a href="#" class="color-a">Sign up</a> here</p>
-                <p class="center">Log in with</p>
-                <div><a href='tel:+2348062855834'><i class="fas fa-phone fa-2x fa-color"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=+2348062855834"><i class="fab fa-whatsapp fa-2x fa-color"></i></a>
-                    <a href='mailto:olaideolutunji@gmail.com'><i class="far fa-envelope fa-2x fa-color"></i></a>
-                    <a href='https://www.instagram.com/divine_prowess_music'><i class="fab fa-instagram-square fa-2x fa-color"></i></a>
-                    <a href='https://www.facebook.com/divineprowessmusic'><i class="fab fa-facebook-square fa-2x fa-color"></i></a>
-                    <a href='https://www.linkedin.com/in/olaide-ismaila-004a081bb'><i class="fab fa-linkedin-in fa-2x fa-color"></i></a>
-                </div>
-            </div>
-        </aside>
-        </main>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Olaide">
+    <meta name="description" content="Official Website for The Little Taco Shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Little Taco Shop</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__h1">Little Taco Shop</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="hours.html">Hours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2 class="hero__h2">Bienvenidos!</h2>
+        <figure>
+            <img src="tacos_and_drink_400x267.png" alt="Tacos and a Drink" width="1000" height="667">
+            <figcaption class="offscreen">Taco and Drink</figcaption>
+        </figure>
+    </section>
+    <main class="main">
+        <article id="menu" class="main__article menu">
+            <h2 class="menu__h2">Our Menu</h2>
+            <table  class="menu__container">
+                <caption class="offscreen">Our Tacos</caption>
+                <thead>
+                    <tr>
+                        <th class="menu__header" scope="col">Tacos</th>
+                        <th class="menu__header" scope="col">Quantity</th>
+                        <th class="menu__header" scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" rowspan="3" class="menu__item menu__cr">Crunchy</th>
+                        <td class="menu__item">1</td>
+                        <td class="menu__item">$1.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">2</td>
+                        <td class="menu__item">$2.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">3</td>
+                        <td class="menu__item">$3.25</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="3" class="menu__item menu__sf">Soft</th>
+                        <td class="menu__item">1</td>
+                        <td class="menu__item">$2.00</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">2</td>
+                        <td class="menu__item">$3.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">3</td>
+                        <td class="menu__item">$4.25</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="menu__item menu__cs" colspan="3">Chips &amp Salsa $2</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <p class="center"><a href="#">Back to Top</a></p>
+        </article>
+    </main>
+    <footer class="footer">
+        <p> <span class="nowrap">Copyright &copy; <time id="year"></time></span> 
+            <span class="nowrap"> Little Taco Shop</span>
+        </p>
+    </footer>
+</body>
 </html>
